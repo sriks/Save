@@ -1,0 +1,28 @@
+{
+   "data": [{
+       "amount": 12.5,
+       "date": "05-06-2016",
+       "merchant": "start",
+       "category": "Food"
+   }, {
+       "amount": 12.5,
+       "date": "05-06-2016",
+       "merchant": "start",
+       "category": "Food"
+   }, {
+       "amount": 12.5,
+       "date": "05-06-2016",
+       "merchant": "start",
+       "category": "Travel"
+   }],
+   "budget": [
+       {
+           "category": "Food",
+           "limit": 50
+       },
+       {
+           "category": "Travel",
+           "limit": 100
+       }
+   ]
+}

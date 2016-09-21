@@ -1,0 +1,30 @@
+{
+    "offers": [{
+            "name": "TopShop",
+            "desc": "Receive 15% cashback at Topshop this month",
+            "subtitle": "Capped at $60",
+            "image": "http://www.logospike.com/wp-content/uploads/2015/11/Topshop_Logo_05.jpg"
+        }, {
+            "name": "Takashimaya",
+            "desc": "Receive a $5 cashback at Takashimaya",
+            "subtitle": "Min spend $50",
+            "image": "https://www.alady.sg/file/shopping-mall-category/logo/15"
+        }, {
+            "name": "Pizza Hut",
+            "desc": "Receive 20% cashback on your next purchase",
+            "subtitle": "No minimum spend",
+            "image": "http://vignette1.wikia.nocookie.net/logopedia/images/6/63/Pizza_Hut_2012_logo.png"
+        }, {
+            "name": "McDonalds",
+            "desc": "Receive 5% cashback at McDonalds this month",
+            "subtitle": "No minimum spend",
+            "image": "http://burlesonchamber.com/wp-content/sabai/File/files/058285c2e31749caf965566cca7226f2.jpg"
+        }, {
+            "name": "Scoot",
+            "desc": "Receive 5% cashback on your next flight purchase",
+            "subtitle": "Capped at $50",
+            "image": "http://www.flyscoot.com/templates/scoot/assets/images/scoot-logo.svg"
+        }
+
+    ]
+}

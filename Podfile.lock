@@ -1,0 +1,17 @@
+PODS:
+  - CardIO (5.4.1)
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+
+DEPENDENCIES:
+  - CardIO
+  - Realm
+
+SPEC CHECKSUMS:
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+
+PODFILE CHECKSUM: 48d31924e4a96cab3ae2ddff5bfee2b68474abed
+
+COCOAPODS: 1.0.0

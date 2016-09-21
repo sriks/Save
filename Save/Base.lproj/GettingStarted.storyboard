@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yvd-H4-rrp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="sO2-4l-9mV">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="yvd-H4-rrp" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FUz-wJ-FKz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aHN-J4-5hY" kind="relationship" relationship="rootViewController" id="JBb-cj-bhb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcr-DJ-weX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="263"/>
+        </scene>
+        <!--Scan Card View Controller-->
+        <scene sceneID="rhV-mR-aaJ">
+            <objects>
+                <viewController storyboardIdentifier="ScanCardViewController" id="aHN-J4-5hY" customClass="ScanCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mvc-sv-hug"/>
+                        <viewControllerLayoutGuide type="bottom" id="qXv-x0-atT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OFo-T6-j8h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v5-1A-7qB">
+                                <rect key="frame" x="226" y="498" width="148" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Scan your Card"/>
+                                <connections>
+                                    <action selector="didTapOnScanCard:" destination="aHN-J4-5hY" eventType="touchUpInside" id="1fd-wG-Mm9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="o8n-x7-VeA">
+                                <rect key="frame" x="215" y="55" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o8n-x7-VeA" secondAttribute="height" multiplier="1:1" id="Baa-DN-P9D"/>
+                                    <constraint firstAttribute="width" constant="170" id="kz0-WY-kWu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Squirrel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVm-Dl-UZZ">
+                                <rect key="frame" x="240.5" y="270" width="119.5" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="38"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2v5-1A-7qB" firstAttribute="centerX" secondItem="OFo-T6-j8h" secondAttribute="centerX" id="FgR-2b-akx"/>
+                            <constraint firstItem="o8n-x7-VeA" firstAttribute="top" secondItem="mvc-sv-hug" secondAttribute="bottom" constant="35" id="RlK-Vg-cnb"/>
+                            <constraint firstItem="o8n-x7-VeA" firstAttribute="centerX" secondItem="OFo-T6-j8h" secondAttribute="centerX" id="cDW-Tl-UZ0"/>
+                            <constraint firstItem="OVm-Dl-UZZ" firstAttribute="centerX" secondItem="OFo-T6-j8h" secondAttribute="centerX" id="dHJ-ty-STp"/>
+                            <constraint firstItem="qXv-x0-atT" firstAttribute="top" secondItem="2v5-1A-7qB" secondAttribute="bottom" constant="63" id="hfs-wL-41o"/>
+                            <constraint firstItem="OVm-Dl-UZZ" firstAttribute="top" secondItem="o8n-x7-VeA" secondAttribute="bottom" constant="45" id="or6-wt-hfz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="20L-wl-SkV"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="4sf-q1-49G" kind="show" identifier="showCardAdded" id="hF9-dX-UJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vo9-MW-ouY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="263"/>
+        </scene>
+        <!--Card Added View Controller-->
+        <scene sceneID="KV7-1R-8Nd">
+            <objects>
+                <viewController id="4sf-q1-49G" customClass="CardAddedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PKg-DU-B5D"/>
+                        <viewControllerLayoutGuide type="bottom" id="zqp-34-4un"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wSF-WT-dT8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="572-jx-xsg" userLabel="Card Added Box">
+                                <rect key="frame" x="159" y="80" width="283" height="48"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checked" translatesAutoresizingMaskIntoConstraints="NO" id="RnD-QA-2wr">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <color key="tintColor" red="0.32318069379926473" green="1" blue="0.17822911157655752" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RnD-QA-2wr" secondAttribute="height" multiplier="1:1" id="Hdq-tm-s6c"/>
+                                            <constraint firstAttribute="width" constant="48" id="dum-Km-tC9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your card has been added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXb-h9-vNJ">
+                                        <rect key="frame" x="53" y="0.0" width="230" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntu-D9-xpY">
+                                <rect key="frame" x="245" y="526" width="110" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <action selector="onGetStartedTapped:" destination="4sf-q1-49G" eventType="touchUpInside" id="qRm-Uj-OTn"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9kV-P6-qE5" userLabel="Features Box">
+                                <rect key="frame" x="21" y="326" width="560" height="184"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pA9-hi-fiS" userLabel="Item1">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="48"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="5dw-7P-3Ll">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="48" id="hey-Vb-9Dv"/>
+                                                    <constraint firstAttribute="width" secondItem="5dw-7P-3Ll" secondAttribute="height" multiplier="1:1" id="lOZ-jA-K7M"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mastercard transactions are automatically loaded" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooz-t6-oZj">
+                                                <rect key="frame" x="68" y="0.0" width="492" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L7o-t1-9Dn" userLabel="Item2">
+                                        <rect key="frame" x="0.0" y="68" width="560" height="48"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Receipts" translatesAutoresizingMaskIntoConstraints="NO" id="ibR-Ac-4QP">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                <color key="tintColor" red="0.32318069379999997" green="1" blue="0.17822911159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ibR-Ac-4QP" secondAttribute="height" multiplier="1:1" id="hbT-Wo-YCg"/>
+                                                    <constraint firstAttribute="width" constant="48" id="ilB-F4-mNS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan receipts and input other expenses" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xud-hq-YCK">
+                                                <rect key="frame" x="68" y="0.0" width="492" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OOi-wq-s2e" userLabel="Item3">
+                                        <rect key="frame" x="0.0" y="136" width="560" height="48"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Limits" translatesAutoresizingMaskIntoConstraints="NO" id="AAb-MM-QDS">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                <color key="tintColor" red="0.32318069379999997" green="1" blue="0.17822911159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="AAb-MM-QDS" secondAttribute="height" multiplier="1:1" id="OG6-6R-WPF"/>
+                                                    <constraint firstAttribute="width" constant="48" id="Xjh-sw-TFF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set limits for specific spend category" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJw-D9-fF4">
+                                                <rect key="frame" x="68" y="0.0" width="492" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wiF-LP-TBN">
+                                <rect key="frame" x="261" y="164" width="78" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wiF-LP-TBN" secondAttribute="height" multiplier="1:1" id="3lI-0p-e8d"/>
+                                    <constraint firstAttribute="width" constant="78" id="xS9-KK-oLi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wiF-LP-TBN" firstAttribute="top" secondItem="LXb-h9-vNJ" secondAttribute="bottom" constant="36" id="Fe2-uF-TaG"/>
+                            <constraint firstItem="wiF-LP-TBN" firstAttribute="centerX" secondItem="wSF-WT-dT8" secondAttribute="centerX" id="Ffp-oc-7u3"/>
+                            <constraint firstItem="9kV-P6-qE5" firstAttribute="width" secondItem="wSF-WT-dT8" secondAttribute="width" constant="-40" id="RJN-Nr-iXi"/>
+                            <constraint firstItem="zqp-34-4un" firstAttribute="top" secondItem="ntu-D9-xpY" secondAttribute="bottom" constant="35" id="Rwz-yZ-nJX"/>
+                            <constraint firstItem="9kV-P6-qE5" firstAttribute="centerX" secondItem="572-jx-xsg" secondAttribute="centerX" id="SLZ-nS-eAM"/>
+                            <constraint firstItem="9kV-P6-qE5" firstAttribute="top" secondItem="572-jx-xsg" secondAttribute="bottom" constant="198" id="V72-WU-hiB"/>
+                            <constraint firstItem="ntu-D9-xpY" firstAttribute="centerX" secondItem="wSF-WT-dT8" secondAttribute="centerX" id="aeY-j7-8fh"/>
+                            <constraint firstItem="wiF-LP-TBN" firstAttribute="leading" secondItem="wSF-WT-dT8" secondAttribute="leadingMargin" constant="161" id="lpw-mx-xx4"/>
+                            <constraint firstItem="572-jx-xsg" firstAttribute="top" secondItem="PKg-DU-B5D" secondAttribute="bottom" constant="60" id="prd-Sj-qbu"/>
+                            <constraint firstItem="572-jx-xsg" firstAttribute="centerX" secondItem="wSF-WT-dT8" secondAttribute="centerX" id="r9t-fs-LiM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lpw-mx-xx4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lNZ-RI-30D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408" y="263"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Checked" width="100" height="100"/>
+        <image name="Limits" width="100" height="100"/>
+        <image name="Logo" width="256" height="256"/>
+        <image name="Mastercard" width="100" height="100"/>
+        <image name="Receipts" width="100" height="100"/>
+    </resources>
+</document>
