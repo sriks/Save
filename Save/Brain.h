@@ -11,8 +11,8 @@
 #import "TransactionModel.h"
 #import "BudgetModel.h"
 #import "OfferModel.h"
+#import "CardModel.h"
 
-@class CardModel;
 @class UIColor;
 
 @interface Brain : NSObject
@@ -21,8 +21,10 @@
 
 + (UIColor*)themeColor;
 
+- (void)clear;
 - (void)addCard:(CardModel*)card;
 - (BOOL)isCardAdded;
+- (CardModel*)card;
 
 - (RLMResults<TransactionModel*>*)transactionsForCategories:(NSArray*)categories;
 - (RLMResults<BudgetModel*>*)budgets;

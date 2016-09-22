@@ -7,9 +7,10 @@
 //
 
 @import Foundation;
+#import <Realm/Realm.h>
 
-@interface CardModel : NSObject
-@property (nonatomic, copy) NSString* number;
-@property (nonatomic, copy) NSString* expiry;
-@property (nonatomic, copy) NSString* cvv;
+@interface CardModel : RLMObject
+@property NSString* number;
+@property NSString* expiry;
+@property NSString* cvv;
 @end

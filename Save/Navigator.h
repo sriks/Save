@@ -13,5 +13,6 @@
 + (instancetype)sharedInstance;
 
 - (void)navigateToHome;
+- (void)navigateToGettingStarted;
 
 @end

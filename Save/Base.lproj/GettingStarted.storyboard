@@ -117,7 +117,7 @@
                                     <action selector="onGetStartedTapped:" destination="4sf-q1-49G" eventType="touchUpInside" id="qRm-Uj-OTn"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9kV-P6-qE5" userLabel="Features Box">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9kV-P6-qE5" userLabel="Features Box">
                                 <rect key="frame" x="21" y="326" width="560" height="184"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pA9-hi-fiS" userLabel="Item1">
@@ -138,12 +138,11 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L7o-t1-9Dn" userLabel="Item2">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L7o-t1-9Dn" userLabel="Item2">
                                         <rect key="frame" x="0.0" y="68" width="560" height="48"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Receipts" translatesAutoresizingMaskIntoConstraints="NO" id="ibR-Ac-4QP">
                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
-                                                <color key="tintColor" red="0.32318069379999997" green="1" blue="0.17822911159999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ibR-Ac-4QP" secondAttribute="height" multiplier="1:1" id="hbT-Wo-YCg"/>
                                                     <constraint firstAttribute="width" constant="48" id="ilB-F4-mNS"/>
@@ -157,12 +156,11 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OOi-wq-s2e" userLabel="Item3">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OOi-wq-s2e" userLabel="Item3">
                                         <rect key="frame" x="0.0" y="136" width="560" height="48"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Limits" translatesAutoresizingMaskIntoConstraints="NO" id="AAb-MM-QDS">
                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
-                                                <color key="tintColor" red="0.32318069379999997" green="1" blue="0.17822911159999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="AAb-MM-QDS" secondAttribute="height" multiplier="1:1" id="OG6-6R-WPF"/>
                                                     <constraint firstAttribute="width" constant="48" id="Xjh-sw-TFF"/>

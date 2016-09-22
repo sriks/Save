@@ -235,6 +235,7 @@
                         <segue destination="Fw2-8K-1mY" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="Omq-W2-32X" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="cuW-WJ-YOv" kind="relationship" relationship="viewControllers" id="L3y-mx-T9o"/>
+                        <segue destination="xBV-th-FI5" kind="relationship" relationship="viewControllers" id="V8B-c7-wzg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -245,7 +246,7 @@
         <scene sceneID="drW-fj-prP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fw2-8K-1mY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bE4-el-aBD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -264,7 +265,7 @@
         <scene sceneID="00t-hg-2hQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Omq-W2-32X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Budget" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Budget" image="Budgets" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U2q-oE-QLP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -283,7 +284,7 @@
         <scene sceneID="qaP-dA-1IM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cuW-WJ-YOv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Offers" image="first" badgeValue="6" id="4Kx-aR-BcE"/>
+                    <tabBarItem key="tabBarItem" title="Offers" image="Offers" badgeValue="6" id="4Kx-aR-BcE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ex1-wp-usc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -297,6 +298,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abH-pJ-zmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="738" y="1054"/>
+        </scene>
+        <!--Cards-->
+        <scene sceneID="aoM-ff-2wW">
+            <objects>
+                <viewController id="Yfc-0t-dR6" customClass="CardsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pDn-mU-F1R"/>
+                        <viewControllerLayoutGuide type="bottom" id="y1i-fl-bxm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZLs-fd-d3J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="W3d-mQ-dGE">
+                                <rect key="frame" x="20" y="124" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="0wO-fE-goG"/>
+                                    <constraint firstAttribute="width" secondItem="W3d-mQ-dGE" secondAttribute="height" multiplier="1:1" id="6Mq-44-89N"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4444-XXXX-XXXX-4444" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M5-tO-49p">
+                                <rect key="frame" x="122" y="155" width="458" height="19"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqC-UI-FZN">
+                                <rect key="frame" x="122" y="182" width="458" height="17"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amy's Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIo-az-e00">
+                                <rect key="frame" x="122" y="124" width="458" height="17"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKz-kP-sfp">
+                                <rect key="frame" x="246" y="289" width="107" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Remove Card">
+                                    <color key="titleColor" red="1" green="0.29174789100963616" blue="0.13347466846509515" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRemoveCardTapped:" destination="Yfc-0t-dR6" eventType="touchUpInside" id="7ui-AO-IGz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iIo-az-e00" firstAttribute="top" secondItem="W3d-mQ-dGE" secondAttribute="top" id="07l-6e-uSg"/>
+                            <constraint firstItem="EKz-kP-sfp" firstAttribute="top" secondItem="AqC-UI-FZN" secondAttribute="bottom" constant="90" id="0Mg-jp-1xR"/>
+                            <constraint firstItem="AqC-UI-FZN" firstAttribute="leading" secondItem="4M5-tO-49p" secondAttribute="leading" id="5Hv-WZ-8Fm"/>
+                            <constraint firstItem="iIo-az-e00" firstAttribute="leading" secondItem="4M5-tO-49p" secondAttribute="leading" id="Ar0-dY-RmT"/>
+                            <constraint firstItem="AqC-UI-FZN" firstAttribute="top" secondItem="4M5-tO-49p" secondAttribute="bottom" constant="8" id="BR3-6k-J4l"/>
+                            <constraint firstItem="4M5-tO-49p" firstAttribute="leading" secondItem="W3d-mQ-dGE" secondAttribute="trailing" constant="30" id="GLt-09-CZC"/>
+                            <constraint firstItem="EKz-kP-sfp" firstAttribute="centerY" secondItem="ZLs-fd-d3J" secondAttribute="centerY" id="LkC-Z3-ed8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="W3d-mQ-dGE" secondAttribute="leading" id="WVR-4Z-Rad"/>
+                            <constraint firstItem="4M5-tO-49p" firstAttribute="top" secondItem="iIo-az-e00" secondAttribute="bottom" constant="5" id="Zw1-px-Zrn"/>
+                            <constraint firstItem="EKz-kP-sfp" firstAttribute="centerX" secondItem="ZLs-fd-d3J" secondAttribute="centerX" id="aX6-Xb-KAy"/>
+                            <constraint firstItem="W3d-mQ-dGE" firstAttribute="top" secondItem="4M5-tO-49p" secondAttribute="bottom" constant="-50" id="akT-or-xt4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4M5-tO-49p" secondAttribute="trailing" id="gQh-S6-Nhq"/>
+                            <constraint firstItem="W3d-mQ-dGE" firstAttribute="top" secondItem="pDn-mU-F1R" secondAttribute="bottom" constant="60" id="lQP-Wu-mIp"/>
+                            <constraint firstItem="AqC-UI-FZN" firstAttribute="width" secondItem="4M5-tO-49p" secondAttribute="width" id="xTb-uF-ST3"/>
+                            <constraint firstItem="iIo-az-e00" firstAttribute="width" secondItem="4M5-tO-49p" secondAttribute="width" id="xfb-v8-xr9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Zw1-px-Zrn"/>
+                                <exclude reference="LkC-Z3-ed8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cards" id="Q5E-bj-b96"/>
+                    <connections>
+                        <outlet property="cardExpiryLabel" destination="AqC-UI-FZN" id="Kv1-uu-WKq"/>
+                        <outlet property="cardNumberLabel" destination="4M5-tO-49p" id="SHc-bk-kWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8QE-vn-fey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="1728"/>
         </scene>
         <!--Transactions View Controller-->
         <scene sceneID="fyA-4p-1G5">
@@ -410,10 +494,32 @@
             </objects>
             <point key="canvasLocation" x="1572" y="-1055"/>
         </scene>
+        <!--Cards-->
+        <scene sceneID="x0l-Hz-E2a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xBV-th-FI5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cards" image="CreditCard" id="jq8-c9-sc4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VRL-jw-UIg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yfc-0t-dR6" kind="relationship" relationship="rootViewController" id="snd-uO-aTf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJK-hu-xd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="1728"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Budgets" width="30" height="30"/>
         <image name="Checked" width="100" height="100"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="CreditCard" width="30" height="30"/>
+        <image name="Home" width="30" height="30"/>
+        <image name="Mastercard" width="100" height="100"/>
+        <image name="Offers" width="29" height="30"/>
     </resources>
 </document>

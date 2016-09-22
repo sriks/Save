@@ -26,6 +26,12 @@
     [self ourWindow].rootViewController = root;
 }
 
+- (void)navigateToGettingStarted {
+    UIViewController* root = [[UIStoryboard storyboardWithName:@"GettingStarted" bundle:nil] instantiateInitialViewController];
+    [self ourWindow].rootViewController = root;
+
+}
+
 - (UIWindow*)ourWindow {
     UIApplication* app = [UIApplication sharedApplication];
     return app.windows.firstObject;

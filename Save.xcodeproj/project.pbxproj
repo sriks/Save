@@ -34,6 +34,7 @@
 		AD78EF811D928E80008E0129 /* offers.json in Resources */ = {isa = PBXBuildFile; fileRef = AD78EF801D928E80008E0129 /* offers.json */; };
 		AD78EF851D928F5F008E0129 /* OffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78EF841D928F5F008E0129 /* OffersViewController.m */; };
 		AD78EF881D929003008E0129 /* OfferModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78EF871D929003008E0129 /* OfferModel.m */; };
+		AD78EF8C1D93822B008E0129 /* CardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78EF8B1D93822B008E0129 /* CardsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		AD78EF841D928F5F008E0129 /* OffersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffersViewController.m; sourceTree = "<group>"; };
 		AD78EF861D929003008E0129 /* OfferModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferModel.h; sourceTree = "<group>"; };
 		AD78EF871D929003008E0129 /* OfferModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferModel.m; sourceTree = "<group>"; };
+		AD78EF8A1D93822B008E0129 /* CardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsViewController.h; sourceTree = "<group>"; };
+		AD78EF8B1D93822B008E0129 /* CardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsViewController.m; sourceTree = "<group>"; };
 		BE4A473C91456F4F39626883 /* Pods-Save.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Save.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Save/Pods-Save.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,8 +164,6 @@
 				AD78EF5A1D9230FB008E0129 /* Storyboards */,
 				AD78EF231D922260008E0129 /* AppDelegate.h */,
 				AD78EF241D922260008E0129 /* AppDelegate.m */,
-				AD78EF261D922260008E0129 /* HomeViewController.h */,
-				AD78EF271D922260008E0129 /* HomeViewController.m */,
 				AD78EF2F1D922260008E0129 /* Assets.xcassets */,
 				AD78EF341D922260008E0129 /* Info.plist */,
 				AD78EF201D922260008E0129 /* Supporting Files */,
@@ -222,6 +223,7 @@
 		AD78EF5B1D923124008E0129 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AD78EF891D937A13008E0129 /* Cards */,
 				AD78EF821D928F47008E0129 /* Offers */,
 				AD78EF741D9274D9008E0129 /* Budget */,
 				AD78EF6D1D926781008E0129 /* Cells */,
@@ -243,6 +245,8 @@
 		AD78EF631D923B84008E0129 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AD78EF261D922260008E0129 /* HomeViewController.h */,
+				AD78EF271D922260008E0129 /* HomeViewController.m */,
 				AD78EF601D923B7E008E0129 /* TransactionsViewController.h */,
 				AD78EF611D923B7E008E0129 /* TransactionsViewController.m */,
 				AD78EF651D923BC0008E0129 /* GraphViewController.h */,
@@ -290,6 +294,15 @@
 				AD78EF841D928F5F008E0129 /* OffersViewController.m */,
 			);
 			name = Offers;
+			sourceTree = "<group>";
+		};
+		AD78EF891D937A13008E0129 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				AD78EF8A1D93822B008E0129 /* CardsViewController.h */,
+				AD78EF8B1D93822B008E0129 /* CardsViewController.m */,
+			);
+			name = Cards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +471,7 @@
 				AD78EF701D9267AF008E0129 /* SimpleCell.m in Sources */,
 				AD78EF621D923B7E008E0129 /* TransactionsViewController.m in Sources */,
 				AD78EF881D929003008E0129 /* OfferModel.m in Sources */,
+				AD78EF8C1D93822B008E0129 /* CardsViewController.m in Sources */,
 				AD78EF281D922260008E0129 /* HomeViewController.m in Sources */,
 				AD78EF6A1D924EC4008E0129 /* TransactionModel.m in Sources */,
 				AD78EF771D9274EB008E0129 /* BudgetViewController.m in Sources */,

@@ -10,7 +10,7 @@
 #import "Brain.h"
 #import "Navigator.h"
 
-#define TEST_LAUNCH_HOME
+//#define TEST_LAUNCH_HOME
 
 @interface AppDelegate ()
 

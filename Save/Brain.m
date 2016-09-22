@@ -29,7 +29,7 @@
 
 - (void)setup {
     self.realm = [RLMRealm defaultRealm];
-    if ([self.realm isEmpty]) {
+    if (![self isSet:@"loadeddata"]) {
         [self loadData];
     }
 }
@@ -48,15 +48,23 @@
 }
 
 - (void)addCard:(CardModel*)card {
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:card.number forKey:@"card_number"];
-    [defaults synchronize];
+    [self.realm beginWriteTransaction];
+    [self.realm addObject:card];
+    [self.realm commitWriteTransaction];
+    [self setup];
 }
 
 - (BOOL)isCardAdded {
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    NSString* cardNum = [defaults stringForKey:@"card_number"];
-    return (cardNum != nil);
+    return ([self card] != nil);
+}
+
+- (CardModel*)card {
+    RLMResults<CardModel*>* cards = [CardModel allObjects];
+    if (cards && cards.count) {
+        return cards.firstObject;
+    } else {
+        return nil;
+    }
 }
 
 - (void)setSetting:(NSString*)settingName value:(NSObject*)value {
@@ -104,7 +112,7 @@
     }
     
     [self.realm commitWriteTransaction];
-    [self setSetting:@"loaddata" value:[NSNumber numberWithBool:YES]];
+    [self setSetting:@"loadeddata" value:[NSNumber numberWithBool:YES]];
 }
 
 - (RLMResults<TransactionModel*>*)transactionsForCategories:(NSArray*)categories {
@@ -150,7 +158,6 @@
             [self.offersArray addObject:model];
         }
     }
-    
     return self.offersArray;
 }
 
