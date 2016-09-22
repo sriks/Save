@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     UINib* nib = [UINib nibWithNibName:@"SimpleCell" bundle:nil];
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"simplecell2"];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"simplecell"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -45,7 +45,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    SimpleCell* cell = (SimpleCell*)[tableView dequeueReusableCellWithIdentifier:@"simplecell2" forIndexPath:indexPath];
+    SimpleCell* cell = (SimpleCell*)[tableView dequeueReusableCellWithIdentifier:@"simplecell" forIndexPath:indexPath];
     [cell configure:self.budgets[indexPath.row]];
     return cell;
 }

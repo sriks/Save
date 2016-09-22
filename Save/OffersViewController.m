@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.offers = [[Brain sharedInstance] offers];
     UINib* nib = [UINib nibWithNibName:@"SimpleCell" bundle:nil];
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"simplecell2"];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"simplecell"];
 }
 
 #pragma mark - Table view data source
@@ -34,10 +34,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"offercell" forIndexPath:indexPath];
-    OfferModel* model = self.offers[indexPath.row];
-    cell.textLabel.text= model.merchant;
-    cell.detailTextLabel.text = model.details;
+    
+    SimpleCell* cell = (SimpleCell*) [tableView dequeueReusableCellWithIdentifier:@"simplecell" forIndexPath:indexPath];
+    [cell configure:self.offers[indexPath.row]];
     return cell;
 }
 

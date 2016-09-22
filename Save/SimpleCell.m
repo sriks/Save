@@ -68,7 +68,8 @@
 - (void)configureAsOffer:(OfferModel*)model {
     self.titleLabel.text = model.merchant;
     self.subtitleLabel.text = model.details;
-    self.categoryImageView.hidden = YES;
+    self.subtitleLabel.numberOfLines = 2;
+    self.categoryImageView.image = [UIImage imageNamed:model.category];
 }
 
 

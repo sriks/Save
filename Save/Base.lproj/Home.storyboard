@@ -87,36 +87,10 @@
         <scene sceneID="qCq-ai-Xrf">
             <objects>
                 <tableViewController id="rOI-FH-wKZ" customClass="OffersViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="6tH-bC-k7d">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="6tH-bC-k7d">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="offercell" textLabel="jbw-YX-k77" detailTextLabel="mxG-k6-1Xi" style="IBUITableViewCellStyleSubtitle" id="NcS-Uh-pOO">
-                                <rect key="frame" x="0.0" y="92" width="600" height="73"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NcS-Uh-pOO" id="71h-NT-dtj">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="72.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jbw-YX-k77">
-                                            <rect key="frame" x="15" y="14" width="42.5" height="27.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mxG-k6-1Xi">
-                                            <rect key="frame" x="15" y="41.5" width="52" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="rOI-FH-wKZ" id="Rm2-q1-UvQ"/>
                             <outlet property="delegate" destination="rOI-FH-wKZ" id="mhP-Vp-1Yb"/>
@@ -309,7 +283,7 @@
         <scene sceneID="qaP-dA-1IM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cuW-WJ-YOv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Offers" image="first" badgeValue="5" id="4Kx-aR-BcE"/>
+                    <tabBarItem key="tabBarItem" title="Offers" image="first" badgeValue="6" id="4Kx-aR-BcE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ex1-wp-usc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

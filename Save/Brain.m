@@ -142,6 +142,7 @@
 
         for (NSDictionary* o in offers) {
             OfferModel* model = [OfferModel new];
+            model.category = o[@"category"];
             model.merchant = o[@"name"];
             model.details = o[@"desc"];
             model.clause = o[@"subtitle"];

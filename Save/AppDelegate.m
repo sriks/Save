@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "Brain.h"
+#import "Navigator.h"
+
+#define TEST_LAUNCH_HOME
 
 @interface AppDelegate ()
 
@@ -19,6 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window.tintColor = [Brain themeColor];
+    
+#ifdef TEST_LAUNCH_HOME
+    [[Navigator sharedInstance] navigateToHome];
+#endif
     return YES;
 }
 

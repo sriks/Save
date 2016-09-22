@@ -10,6 +10,7 @@
 
 @interface OfferModel : NSObject
 
+@property (nonatomic, copy) NSString* category;
 @property (nonatomic, copy) NSString* merchant;
 @property (nonatomic, copy) NSString* details;
 @property (nonatomic, copy) NSString* clause;
